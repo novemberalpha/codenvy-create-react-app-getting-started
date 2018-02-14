@@ -1,0 +1,71 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Codenvy Tutorial</title>
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="javascripts/respond.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <!--[if lt IE 8]>
+    <link rel="stylesheet" href="stylesheets/ie.css">
+    <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+  </head>
+  <body>
+    <div id="header"></div>
+
+    <div class="wrapper">
+
+      <section>
+        <div id="title">
+          <h1>Build your first react application using Codenvy</h1>
+          <h5>Take the pebble from my hand!</h5>
+          <hr>
+          <span class="credits left">Project maintained by <a href="https://github.com/novemberalpha">Joe Juhnke</a></span>
+          <span class="credits right">This project is released under the terms of the MIT license.</span>
+        </div>
+        <ul>
+          <li>Sign up for a Codenvy account</li>
+          <li>From Dashboard Choose "Create Workspace"<br />
+          <img src="images/Codenvy-dashboard.png" alt="Dashboard">
+          <li>Name your workspace, select "Node" from the quickstart stack, and click the Create button</li>
+          <img src="images/Codenvy-create-workspace.png" alt="Create Workspace">
+          <li>Wait for your workspace to spin up</li>
+          <img src="images/Codenvy-workspace-start.png" alt="Start Workspace">
+          <li>A terminal will open. This is where you will need to enter the following command:</li>
+          <img src="images/Codenvy-cli.png" alt="Install NVM">
+          <pre><code>
+          $ curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.8/install.sh | bash
+        </code></pre>
+          <li>Click on your workspace link to reopen the page with a fresh terminal</li>
+          <img src="images/Codenvy-install-nvm.png" alt="Install create-react-app">
+          <li>Enter these commands. Replace "NAME" with your app's name. Hit enter after each line:</li>
+          <pre><code>
+          $ nvm install 8.9.1
+          $ nvm current
+          $ npm install -g create-react-app
+          $ create-react-app NAME
+          $ cd NAME
+          $ npm install
+          $ npm start
+          </code></pre>
+          <img src="images/Codenvy-run-npm.png" alt="Run react-app">
+          <li>Once you have a compiled app running you must get the url to see the application.</li>
+          <img src="images/Codenvy-get-url.png" alt="Get URL">
+          <li>Click on the link for port 3000 and WALAH! It opens in another</li>
+          <img src="images/Codenvy-react-app.png" alt="Get URL">
+          <li>You may now edit app.js, save the file and refresh the view page to see your changes show up.</li>
+          <li>Have Fun!</li>
+        </ul>
+        <h3></h3>
+      </section>
+    </div>
+    <!--[if !IE]><script>fixScale(document);</script><!--<![endif]-->
+  </body>
+</html>
